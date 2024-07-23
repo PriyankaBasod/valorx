@@ -1,0 +1,13 @@
+<div>
+    <h2>Child Component (OnPush Strategy)</h2>
+    <p>{{ childData }}</p>
+    <button class="btn-blue" (click)="updateChildData()">Update Child Data</button>
+  </div>
+
+  <div>
+    <h2>Child Level Service Scope </h2>
+    <p>{{ dataService.counter }}</p>
+    <button class="btn btn-green" (click)="dataService.increment()">increment counter Value </button>
+    <button class="btn btn-green" (click)="dataService.decrement()">decrement  counter Value</button>
+</div>
+  

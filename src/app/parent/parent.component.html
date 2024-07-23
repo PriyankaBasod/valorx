@@ -1,0 +1,12 @@
+<div>
+    <h2>Parent Component (Default Strategy)</h2>
+    <p>{{ parentData }}</p>
+    <button class="btn-blue" (click)="updateParentData()">Update Parent Data</button>
+    <app-child [childData]="parentData"></app-child>
+</div>
+<div>
+    <h2>Parent Level Service Scope </h2>
+    <p>{{ dataservice.counter }}</p>
+    <button class="btn-green" (click)="dataservice.increment()">increment counter Value </button>
+    <button class="btn-green" (click)="dataservice.decrement()">decrement  counter Value</button>
+</div>
